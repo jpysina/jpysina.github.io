@@ -13,7 +13,8 @@ body {
 #nexmoe-background .nexmoe-bg {
   opacity: 0.2;
   background-size: cover;
-  filter: blur(30px);
+/*调整背景磨砂*/
+  filter: blur(3px);
   height: 100vh;
   width: 100%;
   position: fixed;
