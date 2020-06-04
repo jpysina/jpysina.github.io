@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jpysina.github.io</id>
     <title>Blog for jpysina</title>
-    <updated>2020-06-04T10:41:38.149Z</updated>
+    <updated>2020-06-04T13:20:18.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jpysina.github.io"/>
     <link rel="self" href="https://jpysina.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>Blog for jpysina</subtitle>
     <logo>https://jpysina.github.io/images/avatar.png</logo>
     <icon>https://jpysina.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Blog for jpysina</rights>
