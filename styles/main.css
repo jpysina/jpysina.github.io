@@ -2238,7 +2238,7 @@ pre > span.copy-code:hover {
     .mist .site-title i {
       background: #FFFFFFcc;
     }.bg-img img {
-        filter: blur(blur(20px)px)
+        filter: blur(8px)
       }.box-scale > #landlord {
       transform: scale(1);
     }body {
