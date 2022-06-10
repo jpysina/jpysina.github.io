@@ -1,753 +1,85 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=area-basic&theme=dark&code=PYBwLglsB2AEC8sDeAoWsAeBBDEDOAXMmurGAJ4gCmRA5AMYCGYVA5sAE7m0A0J6AI2ABXaABNGXAOKMQRAGaMANnip9SsCWEZEA2rQCyMXrFoAVYVRO0A6lTHWzAC2HWAYhwjWAysx-jaAF0SAF91WHIcfCJUDQpqOgA3ZUtaUPD0MGBgJUg5YjjPVlYqDjpGXDxeflgQYDwISBgFUXomuAAKcABKAo1YDiowYQ44XXBdAAZAnlMARkmAUiCAbhqQ9JJVTypCWF0a2P6tHX2ADgAmSdmATgBmC9vJudu7gBZZuYub69g5u7uv3-VxmNUylBopiUEGgVgypEkVEY3goSkhR36sHoOU4RFhAHdYFR6E5JGA8AA6VgcWROCD0CkAGRhSI4UhpYggVGgYA6v35n1mB0xGgxIvQwHk8lUYCI1zBIuxSlxpg4rAEHQuAFYtZ8tWdZgA2M7dNLi9BhBWiq39SXSoZEF42jRKlW0NUCRianU8ADs13-L0mpudsA24sC3QVlo04dgwRCKyAA
+	请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" style="height: 100%">
 <head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-
-    
+  <meta charset="utf-8">
 </head>
-<body>
-    <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  }; </style>
-    <div class="box">
-                <div id="66c532d6fc0d4dad91a85452c4c9ef71" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_66c532d6fc0d4dad91a85452c4c9ef71 = echarts.init(
-            document.getElementById('66c532d6fc0d4dad91a85452c4c9ef71'), 'white', {renderer: 'canvas'});
-        var option_66c532d6fc0d4dad91a85452c4c9ef71 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "heatmap",
-            "coordinateSystem": "calendar",
-            "data": [
-                [
-                    "2017-10-25T00:00:00",
-                    1.0
-                ],
-                [
-                    "2017-09-30T00:00:00",
-                    1.0
-                ],
-                [
-                    "2017-08-22T00:00:00",
-                    1.0
-                ],
-                [
-                    "2017-03-31T00:00:00",
-                    1.0
-                ],
-                [
-                    "2017-03-24T00:00:00",
-                    1.0
-                ],
-                [
-                    "2017-01-27T00:00:00",
-                    1.0
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                ""
-            ],
-            "selected": {
-                "": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    },
-    "calendar": {
-        "width": "auto",
-        "orient": "horizontal",
-        "range": "2017",
-        "cellSize": 20,
-        "dayLabel": {
-            "show": true,
-            "firstDay": 0,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        },
-        "monthLabel": {
-            "show": true,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        }
-    },
-    "title": [
-        {
-            "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "piecewise",
-        "min": 0,
-        "max": 1,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 1,
-        "orient": "horizontal",
-        "left": "50%",
-        "top": "0%",
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 14,
-        "borderWidth": 0
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, 'dark', {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+    tooltip: {
+    trigger: 'axis',
+    position: function (pt) {
+      return [pt[0], '10%'];
     }
-};
-        chart_66c532d6fc0d4dad91a85452c4c9ef71.setOption(option_66c532d6fc0d4dad91a85452c4c9ef71);
-    </script>
-<br/>                <div id="54676e2ce16d4c3d903fc84f517fc782" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_54676e2ce16d4c3d903fc84f517fc782 = echarts.init(
-            document.getElementById('54676e2ce16d4c3d903fc84f517fc782'), 'white', {renderer: 'canvas'});
-        var option_54676e2ce16d4c3d903fc84f517fc782 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "heatmap",
-            "coordinateSystem": "calendar",
-            "data": [
-                [
-                    "2018-12-20T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-12-17T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-11-20T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-11-10T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-11-05T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-10-25T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-10-19T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-08-04T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-06-03T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-03-26T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-03-25T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-03-10T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-02-10T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-01-30T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-01-30T00:00:00",
-                    1.0
-                ],
-                [
-                    "2018-01-30T00:00:00",
-                    1.0
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                ""
-            ],
-            "selected": {
-                "": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    },
-    "calendar": {
-        "width": "auto",
-        "orient": "horizontal",
-        "range": "2018",
-        "cellSize": 20,
-        "dayLabel": {
-            "show": true,
-            "firstDay": 0,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        },
-        "monthLabel": {
-            "show": true,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        }
-    },
-    "title": [
-        {
-            "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "piecewise",
-        "min": 0,
-        "max": 1,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 1,
-        "orient": "horizontal",
-        "left": "50%",
-        "top": "0%",
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 14,
-        "borderWidth": 0
+  },
+  series: [
+    {
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line',
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(255, 158, 68)'
+          },
+          {
+            offset: 1,
+            color: 'rgba(255,70,131,0)'
+          }
+        ])
+      },
     }
+  ]
 };
-        chart_54676e2ce16d4c3d903fc84f517fc782.setOption(option_54676e2ce16d4c3d903fc84f517fc782);
-    </script>
-<br/>                <div id="5fde292b54b14ab5ad312a90e017a310" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_5fde292b54b14ab5ad312a90e017a310 = echarts.init(
-            document.getElementById('5fde292b54b14ab5ad312a90e017a310'), 'white', {renderer: 'canvas'});
-        var option_5fde292b54b14ab5ad312a90e017a310 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "heatmap",
-            "coordinateSystem": "calendar",
-            "data": [
-                [
-                    "2019-11-28T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-11-15T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-10-31T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-10-23T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-10-17T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-06-08T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-05-26T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-04-05T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-03-26T00:00:00",
-                    1.0
-                ],
-                [
-                    "2019-01-30T00:00:00",
-                    1.0
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                ""
-            ],
-            "selected": {
-                "": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    },
-    "calendar": {
-        "width": "auto",
-        "orient": "horizontal",
-        "range": "2019",
-        "cellSize": 20,
-        "dayLabel": {
-            "show": true,
-            "firstDay": 0,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        },
-        "monthLabel": {
-            "show": true,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        }
-    },
-    "title": [
-        {
-            "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "piecewise",
-        "min": 0,
-        "max": 1,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 1,
-        "orient": "horizontal",
-        "left": "50%",
-        "top": "0%",
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 14,
-        "borderWidth": 0
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
     }
-};
-        chart_5fde292b54b14ab5ad312a90e017a310.setOption(option_5fde292b54b14ab5ad312a90e017a310);
-    </script>
-<br/>                <div id="94ee8be3991e4b19a0cf14fd248e04e7" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_94ee8be3991e4b19a0cf14fd248e04e7 = echarts.init(
-            document.getElementById('94ee8be3991e4b19a0cf14fd248e04e7'), 'white', {renderer: 'canvas'});
-        var option_94ee8be3991e4b19a0cf14fd248e04e7 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
-    "series": [
-        {
-            "type": "heatmap",
-            "coordinateSystem": "calendar",
-            "data": [
-                [
-                    "2020-07-01T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-07-01T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-07-01T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-06-05T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-03-24T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-02-14T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-02-04T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-01-29T00:00:00",
-                    1.0
-                ],
-                [
-                    "2020-01-20T00:00:00",
-                    1.0
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                ""
-            ],
-            "selected": {
-                "": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    },
-    "calendar": {
-        "width": "auto",
-        "orient": "horizontal",
-        "range": "2020",
-        "cellSize": 20,
-        "dayLabel": {
-            "show": true,
-            "firstDay": 0,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        },
-        "monthLabel": {
-            "show": true,
-            "position": "start",
-            "nameMap": "en",
-            "color": "#000",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "fontFamily": "sans-serif",
-            "fontSize": 12
-        }
-    },
-    "title": [
-        {
-            "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "piecewise",
-        "min": 0,
-        "max": 1,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 1,
-        "orient": "horizontal",
-        "left": "50%",
-        "top": "0%",
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 14,
-        "borderWidth": 0
-    }
-};
-        chart_94ee8be3991e4b19a0cf14fd248e04e7.setOption(option_94ee8be3991e4b19a0cf14fd248e04e7);
-    </script>
-<br/>    </div>
-    <script>
-    </script>
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
 </body>
 </html>
